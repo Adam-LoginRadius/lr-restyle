@@ -1,3 +1,17 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', 'Helvetica', 'Arial', Sans-serif;
+  color: #0a2135;
+}
+p,
+li {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', Sans-serif;
+  color: rgba(10,33,53,0.8);
+}
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -102,6 +116,29 @@
   src: url("../lr-asset/fonts/Open_Sans/OpenSans-SemiBold.woff2") format('woff2'), url("../lr-asset/fonts/Open_Sans/OpenSans-SemiBold.woff") format('woff'), url("../lr-asset/fonts/Open_Sans/OpenSans-SemiBold.ttf") format('truetype');
 }
 html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.clear:before,
+.clear:after,
+content ' ',
+display table,
+clear both,
+.clear {
+  *zoom: 1;
+}
+a.botton {
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+}
+body {
   font-family: 'Open Sans', 'Ubuntu', 'Helvetica', 'Arial', Sans-serif;
   font-size: 16px;
 }
