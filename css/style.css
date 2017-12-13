@@ -382,6 +382,9 @@ body {
   padding-left: 15px;
   align-items: center;
 }
+main {
+  padding-top: 80px;
+}
 a.botton {
   font-weight: 600;
   text-transform: uppercase;
