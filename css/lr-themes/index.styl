@@ -1,0 +1,22 @@
+// Themes
+//
+// Themes can affect any of the primary types. They can
+// override base styles like default link colours. They can change
+// module elements such as colours and borders. They can affect
+// layout with different arrangements. They can also alter how states look.
+//
+// @source http://smacss.com/book/type-theme
+
+.bg-white
+	background white
+	
+.bg-lr_col_sys_LightBlue-normal
+	background-color $lr_col_sys_LightBlue-normal
+
+body.page
+	// image-rendering crisp-edges
+	background-repeat no-repeat
+	&.page-id-5
+		@extend .bg-lr_col_sys_LightBlue-normal
+		background-image linear-gradient(173deg, $lr_col_sys_LightBlue-light 60%, $lr_col_sys_LightBlue-normal 40%)
+		background-position bottom -50%

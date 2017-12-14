@@ -6,3 +6,48 @@
 // classes, and hacks.
 //
 // @source - http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+
+// ==========================================================================
+// Gravity Form Overwrite
+// ==========================================================================
+
+.base-form
+	h3
+		text-align center
+		line-height 1
+		margin-bottom 1em
+	.gform_wrapper
+		ul.gform_fields li.gfield
+			padding-right 0
+		label.gfield_label
+			font-weight 600
+		.gfield_required
+			color $lr_col_sys_Orange-light
+		input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])
+			padding-left .75em
+		div.ginput_container input
+		select
+			background white
+			border-radius 4px
+			border 1px solid $ma_col_grey300
+			&:placeholder
+				opacity $ma_opa_darkText-Secondary
+			&:hover
+				border 1px solid $lr_col_sys_LightBlue-normal
+			&:focus
+			&:active
+				border 1px solid $lr_col_sys_LightBlue-normal
+				box-shadow none
+				color $lr_base_text_color
+		.gform_page_footer input, .gform_footer input
+			width 100% !important
+			background $lr_col_sys_Orange-normal
+			color white
+			@extend a.botton
+			&:hover
+				background $lr_col_sys_Orange-light
+
+			
+			
+		
+			

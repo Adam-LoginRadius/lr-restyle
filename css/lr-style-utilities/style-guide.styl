@@ -15,7 +15,7 @@ $lr_col_sys_Blue-dark = #00619B
 $lr_col_sys_Blue-light = #2E8EC9
 $lr_col_sys_LightBlue-normal = #48c9ff
 $lr_col_sys_LightBlue-dark = #3BA5D1
-$lr_col_sys_LightBlue-dark = #69D2FF
+$lr_col_sys_LightBlue-light = #69D2FF
 $lr_col_sys_green-normal = #00BFA5
 $lr_col_sys_green-dark = #009D88
 $lr_col_sys_green-light = #2ECAB5
@@ -48,10 +48,20 @@ $lr_base_text_color = $lr_col_brandBlack
 h1, h2, h3, h4, h5, h6
 	font-family  'Ubuntu', 'Helvetica', 'Arial', Sans-serif
 	color $lr_base_text_color
+	-webkit-font-smoothing antialiased
 
 p, li
 	font-family 'Open Sans', 'Helvetica', 'Arial', Sans-serif
 	color rgba($lr_base_text_color, $ma_opa_darkText-Primary)
+	font-smoothing antialiased
+	
+.type-super
+	@media screen and (min-width 768px)
+		font-size 4em 
+		line-height 70px
+.type-sub
+	font-weight 100
+
 	
 //* Drop Shadow *//
 $drop-shadow-depth-1 = 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
