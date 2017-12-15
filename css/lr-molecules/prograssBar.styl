@@ -1,0 +1,38 @@
+// ==========================================================================
+// Progress Bar
+// ==========================================================================
+.progress_bar
+	position relative
+	.line
+		display block
+		width calc(100% - 1em)
+		background-color $lr_col_brandBlue-light
+		height 6px
+		top 50%
+		transform translate(0%, -50%)
+		position absolute
+		z-index 1
+		&.active
+			background-color $lr_col_sys_Blue-normal
+	ul
+		display flex
+		align-items center
+		justify-content: space-between
+		position relative
+		z-index 10
+	li
+		align-items center
+		background-color $lr_col_brandBlue-light
+		border-radius 50px
+		position relative
+		width 40px
+		height 40px
+		&.active
+			background-color $lr_col_sys_Blue-normal
+			box-shadow $drop-shadow-depth-1 
+	p
+		position absolute
+		top: 50%;
+		left 50%
+		transform translate(-50%, -50%)
+		margin 0

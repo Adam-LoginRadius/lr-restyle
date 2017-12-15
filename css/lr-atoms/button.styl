@@ -1,13 +1,33 @@
 // ==========================================================================
 // Button
 // ==========================================================================
-$bucall
 
-a.botton
+a.btn
+	display block
 	font-weight 500
 	text-transform uppercase
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select none
+	border: 1px solid transparent;
 	line-height 1
 	border-radius 4px
 	padding 16px 12px
+	font-size 1rem
 	transition all 0.3s ease-in-out
-
+	&.btn-default
+		border 1px solid $ma_col_grey500
+	&.btn-primary
+		border 1px solid $lr_col_sys_Blue-normal
+		background $lr_col_sys_Blue-normal
+		color white
+		&:hover
+			border 1px solid $lr_col_sys_Blue-dark
+			background $lr_col_sys_Blue-dark
+	// &.btn-success
+	// &.btn-info
+	// &.btn-warning
+	// &.btn-danger
+	&.btn-link
+		border: 1px solid transparent;

@@ -13,6 +13,8 @@
 // ==========================================================================
 .navbar
 	width 100%
+	height 80px
+	transition all 0.3s ease-in-out
 	&-brand
 		padding .75em 0
 	&-fixed-top
@@ -23,6 +25,9 @@
 		justify-content flex-end
 	&-toggler-right
 			align-self center
+	&.nav-up
+		top: -80px
+	
 .nav-container
 	display flex
 	flex-wrap nowrap

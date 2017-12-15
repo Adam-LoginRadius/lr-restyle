@@ -3,9 +3,9 @@ $lr_col_brandBlue = #2299DD
 $lr_col_brandBlack = #0A2135
 
 $lr_col_brandBlue-dark = #1C7EB5
-$lr_col_brandBlue-light = #2ECAB5
-$lr_col_brandBlack-dark = #1C7EB5
-$lr_col_brandBlack-light = #091C2C
+$lr_col_brandBlue-light = #4AABE3
+$lr_col_brandBlack-dark = #091C2C
+$lr_col_brandBlack-light = #364959
 
 $lr_col_sys_Orange-normal = #f6830b
 $lr_col_sys_Orange-dark = #CA6C0A
@@ -55,12 +55,26 @@ p, li
 	color rgba($lr_base_text_color, $ma_opa_darkText-Primary)
 	font-smoothing antialiased
 	
+.text-white
+	h1, h2, h3, h4, h5, h6
+		color white
+	p, li
+		color rgba(white, $ma_opa_lightText-Primary)
+		
+ul, ol		
+	&.remove-bullet
+		list-style-type none
+		margin 0
+		padding 0
+		
 .type-super
 	@media screen and (min-width 768px)
 		font-size 4em 
 		line-height 70px
 .type-sub
 	font-weight 100
+	
+//* Spacing *//
 
 	
 //* Drop Shadow *//
