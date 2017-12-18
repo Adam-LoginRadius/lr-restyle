@@ -193,104 +193,104 @@ textarea {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url("../lr-asset/fonts/material-icon/MaterialIcons-Regular.eot");
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url("../lr-asset/fonts/MaterialIcons-Regular.woff2") format('woff2'), url("../lr-asset/fonts/MaterialIcons-Regular.woff") format('woff'), url("../lr-asset/fonts/MaterialIcons-Regular.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/material-icon/MaterialIcons-Regular.eot");
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/MaterialIcons-Regular.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/MaterialIcons-Regular.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/MaterialIcons-Regular.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 300;
-  src: url("../lr-asset/fonts/Ubuntu/Ubuntu-Light.woff2") format('woff2'), url("../lr-asset/fonts/Ubuntu/Ubuntu-Light.woff") format('woff'), url("../lr-asset/fonts/Ubuntu/Ubuntu-Light.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Light.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Light.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Light.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
-  src: url("../lr-asset/fonts/Ubuntu/Ubuntu-Regular.woff2") format('woff2'), url("../lr-asset/fonts/Ubuntu/Ubuntu-Regular.woff") format('woff'), url("../lr-asset/fonts/Ubuntu/Ubuntu-Regular.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Regular.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Regular.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Regular.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
   font-style: italic;
   font-weight: 400;
-  src: url("../lr-asset/fonts/Ubuntu/Ubuntu-RegularItalic.woff2") format('woff2'), url("../lr-asset/fonts/Ubuntu/Ubuntu-RegularItalic.woff") format('woff'), url("../lr-asset/fonts/Ubuntu/Ubuntu-RegularItalic.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-RegularItalic.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-RegularItalic.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-RegularItalic.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
-  src: url("../lr-asset/fonts/Ubuntu/Ubuntu-Medium.woff2") format('woff2'), url("../lr-asset/fonts/Ubuntu/Ubuntu-Medium.woff") format('woff'), url("../lr-asset/fonts/Ubuntu/Ubuntu-Medium.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Medium.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Medium.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Medium.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 600;
-  src: url("../lr-asset/fonts/Ubuntu/Ubuntu-Bold.woff2") format('woff2'), url("../lr-asset/fonts/Ubuntu/Ubuntu-Bold.woff") format('woff'), url("../lr-asset/fonts/Ubuntu/Ubuntu-Bold.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Bold.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Bold.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-Bold.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu';
   font-style: italic;
   font-weight: 600;
-  src: url("../lr-asset/fonts/Ubuntu/Ubuntu-BoldItalic.woff2") format('woff2'), url("../lr-asset/fonts/Ubuntu/Ubuntu-BoldItalic.woff") format('woff'), url("../lr-asset/fonts/Ubuntu/Ubuntu-BoldItalic.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-BoldItalic.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-BoldItalic.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu/Ubuntu-BoldItalic.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu Condensed';
   font-style: normal;
   font-weight: 400;
-  src: url("../lr-asset/fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.woff2") format('woff2'), url("../lr-asset/fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.woff") format('woff'), url("../lr-asset/fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu Mono';
   font-style: normal;
   font-weight: 400;
-  src: url("../lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Regular.woff2") format('woff2'), url("../lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Regular.woff") format('woff'), url("../lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Regular.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Regular.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Ubuntu Mono';
   font-style: normal;
   font-weight: 600;
-  src: url("../lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Bold.woff2") format('woff2'), url("../lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Bold.woff") format('woff'), url("../lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Bold.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Bold.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: url("../lr-asset/fonts/Open_Sans/OpenSans-Bold.woff2") format('woff2'), url("../lr-asset/fonts/Open_Sans/OpenSans-Bold.woff") format('woff'), url("../lr-asset/fonts/Open_Sans/OpenSans-Bold.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Bold.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Bold.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Bold.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 700;
-  src: url("../lr-asset/fonts/Open_Sans/OpenSans-BoldItalic.woff2") format('woff2'), url("../lr-asset/fonts/Open_Sans/OpenSans-BoldItalic.woff") format('woff'), url("../lr-asset/fonts/Open_Sans/OpenSans-BoldItalic.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-BoldItalic.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-BoldItalic.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-BoldItalic.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  src: url("../lr-asset/fonts/Open_Sans/OpenSans-Light.woff2") format('woff2'), url("../lr-asset/fonts/Open_Sans/OpenSans-Light.woff") format('woff'), url("../lr-asset/fonts/Open_Sans/OpenSans-Light.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Light.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Light.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Light.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 300;
-  src: url("../lr-asset/fonts/Open_Sans/OpenSans-LightItalic.woff2") format('woff2'), url("../lr-asset/fonts/Open_Sans/OpenSans-LightItalic.woff") format('woff'), url("../lr-asset/fonts/Open_Sans/OpenSans-LightItalic.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-LightItalic.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-LightItalic.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-LightItalic.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url("../lr-asset/fonts/Open_Sans/OpenSans-Regular.woff2") format('woff2'), url("../lr-asset/fonts/Open_Sans/OpenSans-Regular.woff") format('woff'), url("../lr-asset/fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Regular.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Regular.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
-  src: url("../lr-asset/fonts/Open_Sans/OpenSans-Italic.woff2") format('woff2'), url("../lr-asset/fonts/Open_Sans/OpenSans-Italic.woff") format('woff'), url("../lr-asset/fonts/Open_Sans/OpenSans-Italic.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Italic.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Italic.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-Italic.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: url("../lr-asset/fonts/Open_Sans/OpenSans-SemiBold.woff2") format('woff2'), url("../lr-asset/fonts/Open_Sans/OpenSans-SemiBold.woff") format('woff'), url("../lr-asset/fonts/Open_Sans/OpenSans-SemiBold.ttf") format('truetype');
+  src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-SemiBold.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-SemiBold.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-SemiBold.ttf") format('truetype');
 }
 h1,
 h2,
@@ -483,6 +483,28 @@ a:hover {
 main {
   padding-top: 80px;
 }
+@media (min-width: 768px) {
+  .base-form.trial-form ul.gform_fields,
+  ul.gfield_checkbox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    width: calc(100% - 16px);
+  }
+  .base-form.trial-form ul.gform_fields li.gfield:first-of-type,
+  ul.gfield_checkbox li.gfield:first-of-type,
+  .base-form.trial-form ul.gform_fields li#field_1_13,
+  ul.gfield_checkbox li#field_1_13,
+  .base-form.trial-form ul.gform_fields li#field_2_5,
+  ul.gfield_checkbox li#field_2_5,
+  li#field_2_11 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+ul.gfield_checkbox {
+  grid-row-gap: 0;
+}
 a.btn,
 .base-form .gform_wrapper .gform_page_footer input,
 .base-form .gform_wrapper .gform_footer input {
@@ -558,6 +580,9 @@ a.btn.btn-link,
   -webkit-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
+}
+.card h3 {
+  font-weight: 400;
 }
 .navbar .has-depth {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
@@ -647,23 +672,82 @@ a.btn.btn-link,
   background: #fff;
   border-radius: 4px;
   border: 1px solid #e0e0e0;
+  outline: none;
 }
-.base-form .gform_wrapper div.ginput_container input:placeholder,
-.base-form .gform_wrapper div.ginput_container select:placeholder {
-  opacity: 0.54;
+.base-form .gform_wrapper div.ginput_container input::-webkit-input-placeholder,
+.base-form .gform_wrapper div.ginput_container select::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #9e9e9e;
+  vertical-align: center;
+  display: inline;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.base-form .gform_wrapper div.ginput_container input:-ms-input-placeholder,
+.base-form .gform_wrapper div.ginput_container select:-ms-input-placeholder {
+  font-size: 14px;
+  color: #9e9e9e;
+  vertical-align: center;
+  display: inline;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.base-form .gform_wrapper div.ginput_container input::-ms-input-placeholder,
+.base-form .gform_wrapper div.ginput_container select::-ms-input-placeholder {
+  font-size: 14px;
+  color: #9e9e9e;
+  vertical-align: center;
+  display: inline;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.base-form .gform_wrapper div.ginput_container input::placeholder,
+.base-form .gform_wrapper div.ginput_container select::placeholder {
+  font-size: 14px;
+  color: #9e9e9e;
+  vertical-align: center;
+  display: inline;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 .base-form .gform_wrapper div.ginput_container input:hover,
 .base-form .gform_wrapper div.ginput_container select:hover {
-  border: 1px solid #4aabe3;
+  border: 1px solid $lr_col_brandBlue-normal;
 }
 .base-form .gform_wrapper div.ginput_container input:focus,
 .base-form .gform_wrapper div.ginput_container select:focus,
 .base-form .gform_wrapper div.ginput_container input:active,
 .base-form .gform_wrapper div.ginput_container select:active {
-  border: 1px solid #4aabe3;
+  border: 1px solid $lr_col_brandBlue-normal;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #0a2135;
+}
+.base-form .gform_wrapper div.ginput_container select {
+  height: 37px;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.base-form .gform_wrapper div.ginput_container.ginput_container_select {
+  position: relative;
+}
+.base-form .gform_wrapper div.ginput_container.ginput_container_select:after {
+  content: "▼";
+  font-size: 14px;
+  pointer-events: none;
+  display: block;
+  color: #616161;
+  height: 14px;
+  width: 15px;
+  position: absolute;
+  right: 4px;
+  top: calc(50% - 2px);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .base-form .gform_wrapper .gform_page_footer input,
 .base-form .gform_wrapper .gform_footer input {
