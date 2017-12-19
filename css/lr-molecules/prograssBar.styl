@@ -14,6 +14,12 @@
 		z-index 1
 		&.active
 			background-color $lr_col_sys_Blue-normal
+		&.step:before
+			content " "
+			display block
+			width 50%
+			background-color $lr_col_sys_Blue-normal
+			height 6px
 	ul
 		display flex
 		align-items center
@@ -29,10 +35,12 @@
 		height 40px
 		&.active
 			background-color $lr_col_sys_Blue-normal
-			box-shadow $drop-shadow-depth-1 
+			box-shadow $drop-shadow-depth-1
 	p
 		position absolute
 		top: 50%;
 		left 50%
 		transform translate(-50%, -50%)
 		margin 0
+		
+

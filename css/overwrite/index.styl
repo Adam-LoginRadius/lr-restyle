@@ -14,7 +14,7 @@
 .base-form
 	h3
 		text-align center
-		margin-bottom 1em
+		// margin-bottom .36em
 	.gform_wrapper
 		//Basic form
 		ul.gform_fields li.gfield
@@ -51,9 +51,6 @@
 				padding-left 8px
 				padding-right 8px
 				appearance none
-				overflow hidden
-  				// text-overflow ellipsis
-  				// padding-right 40px
 			&.ginput_container_select
 				position relative
 				&:after
@@ -65,8 +62,9 @@
 					color $ma_col_grey700
 					height 16px
 					width 16px
+					padding 0 16px 0 8px
 					position absolute
-					right 4px
+					right -4px
 					top calc(50% - 2px)
 					transform translate(-50%, -50%)
 		.gform_page_footer input, .gform_footer input
