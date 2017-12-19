@@ -1,44 +1,42 @@
 $(document).ready(function() {
 
-	// ==========================================================================
-	// Nagvigation  Hide/Show base from Scroll
-	// ==========================================================================
-	var didScroll;
-	var lastScrollTop = 0;
-	var delta = 5;
-	var navbarHeight = $('nav.navbar').outerHeight();
+	var previousScroll = 0;
 
-	$(window).scroll(function(event){
-		didScroll = true;
+	$(window).scroll(function(){
+
+		var currentScroll = $(this).scrollTop();
+
+		/*
+			If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
+		*/
+
+		if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
+			/*
+				If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
+			*/
+			if (currentScroll > previousScroll){
+				window.setTimeout(hideNav, 300);
+				/*
+					Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
+				*/
+			} else {
+				window.setTimeout(showNav, 300);
+			}
+			/* 
+				Set the previous scroll value equal to the current scroll.
+			*/
+			previousScroll = currentScroll;
+		}
+
 	});
 
-	setInterval(function() {
-		if (didScroll) {
-			hasScrolled();
-			didScroll = false;
-		}
-	}, 250);
-
-	function hasScrolled() {
-		var st = $(this).scrollTop();
-		
-		// Make sure they scroll more than delta
-		if(Math.abs(lastScrollTop - st) <= delta)
-			return;
-
-		// If they scrolled down and are past the navbar, add class .nav-up.
-		// This is necessary so you never see what is "behind" the navbar.
-		if (st > lastScrollTop && st > navbarHeight){
-			// Scroll Down
-			$('nav.navbar').removeClass('nav-down').addClass('nav-up');
-		} else {
-			 // Scroll Up
-			if(st + $(window).height() < $(document).height()) {
-				$('nav.navbar').removeClass('nav-up').addClass('nav-down');
-			}
-		}
-		lastScrollTop = st;
+	function hideNav() {
+		$(".navbar").removeClass("nav-down").addClass("nav-up");
 	}
+	function showNav() {
+		$(".navbar").removeClass("nav-up").addClass("nav-down");
+	}
+
 
 });
 
