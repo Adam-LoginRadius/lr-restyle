@@ -51,7 +51,9 @@
 				padding-left 8px
 				padding-right 8px
 				appearance none
-				
+				overflow hidden
+  				// text-overflow ellipsis
+  				// padding-right 40px
 			&.ginput_container_select
 				position relative
 				&:after
@@ -59,9 +61,10 @@
 					font-size 14px
 					pointer-events none
 					display block
+					background-color white
 					color $ma_col_grey700
-					height 14px
-					width 15px
+					height 16px
+					width 16px
 					position absolute
 					right 4px
 					top calc(50% - 2px)
