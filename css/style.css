@@ -858,8 +858,9 @@ body.page {
 body.page.page-id-5,
 body.page.page-id-33,
 body.page.page-id-34 {
-  background-image: -webkit-linear-gradient(277deg, #69d2ff 55%, #48c9ff 45%);
-  background-image: -o-linear-gradient(277deg, #69d2ff 55%, #48c9ff 45%);
-  background-image: linear-gradient(173deg, #69d2ff 55%, #48c9ff 45%);
-  background-position: bottom -50%;
+  background-image: url("/wp-content/uploads/sites/11/2017/12/digi.svg"), -webkit-linear-gradient(277deg, #69d2ff 55%, #48c9ff 45%);
+  background-image: url("/wp-content/uploads/sites/11/2017/12/digi.svg"), -o-linear-gradient(277deg, #69d2ff 55%, #48c9ff 45%);
+  background-image: url("/wp-content/uploads/sites/11/2017/12/digi.svg"), linear-gradient(173deg, #69d2ff 55%, #48c9ff 45%);
+  background-size: cover;
+  background-position: center;
 }
