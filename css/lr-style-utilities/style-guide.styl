@@ -51,31 +51,25 @@ $lr_base_text_color = $lr_col_brandBlack
 h1, h2, h3, h4, h5, h6
 	font-family  'Ubuntu', 'Helvetica', 'Arial', Sans-serif
 	color $lr_base_text_color
-	-webkit-font-smoothing antialiased
+	// -webkit-font-smoothing antialiased
 
 p, li
 	font-family 'Open Sans', 'Helvetica', 'Arial', Sans-serif
 	color rgba($lr_base_text_color, $ma_opa_darkText-Primary)
-	font-smoothing antialiased
-	
-.text-white
-	h1, h2, h3, h4, h5, h6
-		color white
-	p, li
-		color rgba(white, $ma_opa_lightText-Primary)
+	// font-smoothing antialiased
 		
-ul, ol		
-	&.remove-bullet
-		list-style-type none
-		margin 0
-		padding 0
 		
 .type-super
 	@media screen and (min-width 768px)
 		font-size 4em 
 		line-height 100%
+	&x1
+		font-size 4em 
+	&x2
+		font-size 8em 
+	
 .type-sub
-	font-weight 100
+	font-weight 300
 	
 //* Spacing *//
 

@@ -292,6 +292,7 @@ textarea {
   font-weight: 600;
   src: url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-SemiBold.woff2") format('woff2'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-SemiBold.woff") format('woff'), url("/wp-content/themes/LoginRadius_Trial_2017/css/lr-asset/fonts/Open_Sans/OpenSans-SemiBold.ttf") format('truetype');
 }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700|Ubuntu+Condensed|Ubuntu+Mono|Ubuntu:300,400,400i,500,600");
 h1,
 h2,
 h3,
@@ -300,31 +301,11 @@ h5,
 h6 {
   font-family: 'Ubuntu', 'Helvetica', 'Arial', Sans-serif;
   color: #0a2135;
-  -webkit-font-smoothing: antialiased;
 }
 p,
 li {
   font-family: 'Open Sans', 'Helvetica', 'Arial', Sans-serif;
   color: rgba(10,33,53,0.8);
-  font-smoothing: antialiased;
-}
-.text-white h1,
-.text-white h2,
-.text-white h3,
-.text-white h4,
-.text-white h5,
-.text-white h6 {
-  color: #fff;
-}
-.text-white p,
-.text-white li {
-  color: #fff;
-}
-ul.remove-bullet,
-ol.remove-bullet {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .type-super {
@@ -332,8 +313,14 @@ ol.remove-bullet {
     line-height: 100%;
   }
 }
+.type-superx1 {
+  font-size: 4em;
+}
+.type-superx2 {
+  font-size: 8em;
+}
 .type-sub {
-  font-weight: 100;
+  font-weight: 300;
 }
 html {
   -webkit-box-sizing: border-box;
@@ -356,6 +343,7 @@ clear both,
 body {
   font-family: 'Open Sans', 'Ubuntu', 'Helvetica', 'Arial', Sans-serif;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 ::-moz-selection {
   background: #f79937;
@@ -436,7 +424,28 @@ a {
   color: #4aabe3;
 }
 a:hover {
-  color: $lr_col_brandBlue-normal;
+  color: #29d;
+}
+ul.remove-bullet,
+ol.remove-bullet {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw700 {
+  font-weight: 700;
+}
+.jumbotron {
+  border-radius: 0;
 }
 .navbar {
   width: 100%;
@@ -485,6 +494,22 @@ a:hover {
     padding-left: 16px;
   }
 }
+.navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.nav-item {
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.nav-item a {
+  display: block;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
 main {
   padding-top: 80px;
 }
@@ -516,10 +541,30 @@ main {
 ul.gfield_checkbox {
   grid-row-gap: 0;
 }
+@media (min-height: 500px) {
+  .center-abs {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+.center-abs-obj {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 a.btn,
 .base-form .gform_wrapper .gform_page_footer input,
 .base-form .gform_wrapper .gform_footer input {
-  display: block;
+  display: inline-block;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
@@ -538,6 +583,11 @@ a.btn,
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+a.btn.btn-contain,
+.base-form .gform_wrapper .gform_page_footer input.btn-contain,
+.base-form .gform_wrapper .gform_footer input.btn-contain {
+  display: inline-block;
+}
 a.btn.btn-default,
 .base-form .gform_wrapper .gform_page_footer input.btn-default,
 .base-form .gform_wrapper .gform_footer input.btn-default {
@@ -552,7 +602,13 @@ a.btn.btn-primary,
 }
 a.btn.btn-primary:hover,
 .base-form .gform_wrapper .gform_page_footer input.btn-primary:hover,
-.base-form .gform_wrapper .gform_footer input.btn-primary:hover {
+.base-form .gform_wrapper .gform_footer input.btn-primary:hover,
+a.btn.btn-primary:active,
+.base-form .gform_wrapper .gform_page_footer input.btn-primary:active,
+.base-form .gform_wrapper .gform_footer input.btn-primary:active,
+a.btn.btn-primary:focus,
+.base-form .gform_wrapper .gform_page_footer input.btn-primary:focus,
+.base-form .gform_wrapper .gform_footer input.btn-primary:focus {
   border: 1px solid #00619b;
   background: #00619b;
 }
@@ -560,6 +616,57 @@ a.btn.btn-link,
 .base-form .gform_wrapper .gform_page_footer input.btn-link,
 .base-form .gform_wrapper .gform_footer input.btn-link {
   border: 1px solid transparent;
+}
+a.btn.btn-revese,
+.base-form .gform_wrapper .gform_page_footer input.btn-revese,
+.base-form .gform_wrapper .gform_footer input.btn-revese {
+  border: 1px solid #fff;
+  background: #fff;
+}
+a.btn.btn-revese.lr_col_sys_Blue-dark,
+.base-form .gform_wrapper .gform_page_footer input.btn-revese.lr_col_sys_Blue-dark,
+.base-form .gform_wrapper .gform_footer input.btn-revese.lr_col_sys_Blue-dark {
+  color: #00619b;
+}
+a.btn.btn-revese:hover,
+.base-form .gform_wrapper .gform_page_footer input.btn-revese:hover,
+.base-form .gform_wrapper .gform_footer input.btn-revese:hover,
+a.btn.btn-revese:active,
+.base-form .gform_wrapper .gform_page_footer input.btn-revese:active,
+.base-form .gform_wrapper .gform_footer input.btn-revese:active,
+a.btn.btn-revese:focus,
+.base-form .gform_wrapper .gform_page_footer input.btn-revese:focus,
+.base-form .gform_wrapper .gform_footer input.btn-revese:focus {
+  background: rgba(255,255,255,0);
+  color: #fff;
+}
+.btn {
+  display: block;
+  width: auto;
+}
+.btn.btn-primary {
+  border: 1px solid #0076bd;
+  background: #0076bd;
+  color: #fff;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:not([disabled]):not(.disabled):active,
+.btn.btn-primary:focus {
+  border: 1px solid #00619b;
+  background: #00619b;
+}
+.btn.btn-primary a {
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
 }
 .card {
   background-color: #fff;
@@ -602,9 +709,18 @@ a.btn.btn-link,
 .navbar a {
   color: #29d;
   font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
 }
 .navbar a:hover {
   opacity: 0.7;
+}
+.navbar .btn a {
+  font-size: 0.85rem;
+}
+.navbar .btn a:hover {
+  opacity: 1;
 }
 .progress_bar {
   position: relative;
@@ -667,6 +783,54 @@ a.btn.btn-link,
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin: 0;
+}
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6 {
+  color: #fff;
+}
+.text-white p,
+.text-white li {
+  color: #fff;
+}
+.text-white a {
+  color: #fff;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.text-white a:hover {
+  color: #fff;
+}
+.text-white .navbar-brand {
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.text-white .navbar-brand::before {
+  content: " ";
+  display: block;
+  background-image: url("/wp-content/themes/Loginradius_Partner-Portal-2018/img/logo-w.svg");
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 32px;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.text-white .navbar-brand::after {
+  color: #fff;
+}
+.text-white .navbar-brand img {
+  opacity: 0;
+}
+.underline {
+  text-decoration: underline;
 }
 .base-form h3 {
   text-align: center;
@@ -848,21 +1012,50 @@ a.btn.btn-link,
 .bg-white {
   background: #fff;
 }
+.bg-grey50,
+body.partner_portal.page-id-2 {
+  background: #fafafa;
+}
+.bg-lr_col_sys_Blue-dark {
+  background: #00619b;
+}
+.bg-lr_col_brandBlack {
+  background: #0a2135;
+}
 .bg-lr_col_sys_LightBlue-normal,
-body.page.page-id-5,
-body.page.page-id-33,
-body.page.page-id-34 {
+body.error404,
+body.page-id-5,
+body.page-id-33,
+body.page-id-34 {
   background-color: #48c9ff;
 }
-body.page {
+body {
   background-repeat: no-repeat;
 }
-body.page.page-id-5,
-body.page.page-id-33,
-body.page.page-id-34 {
+body.page-id-5,
+body.page-id-33,
+body.page-id-34 {
   background-image: url("/wp-content/uploads/sites/11/2017/12/digi.svg"), -webkit-linear-gradient(277deg, #69d2ff 55%, #48c9ff 45%);
   background-image: url("/wp-content/uploads/sites/11/2017/12/digi.svg"), -o-linear-gradient(277deg, #69d2ff 55%, #48c9ff 45%);
   background-image: url("/wp-content/uploads/sites/11/2017/12/digi.svg"), linear-gradient(173deg, #69d2ff 55%, #48c9ff 45%);
   background-size: cover;
   background-position: center;
+}
+.logo-sub_title {
+  position: relative;
+}
+.logo-sub_title-partner_portal::after {
+/* Partner Protoal */
+  content: "Partner Portal";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  font-size: 0.75rem;
+  font-family: 'Ubuntu', 'Helvetica', 'Arial', Sans-serif;
+  color: #0a2135;
+  font-weight: 300;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
 }

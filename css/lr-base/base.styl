@@ -14,6 +14,7 @@
 body
 	font-family 'Open Sans', 'Ubuntu', 'Helvetica', 'Arial', Sans-serif
 	font-size 16px
+	-webkit-font-smoothing antialiased
 ::selection
 	background $lr_col_sys_Orange-light
 	color white
@@ -64,6 +65,32 @@ a
 	text-decoration none
 	color $lr_col_brandBlue-light
 	&:hover
-		color $lr_col_brandBlue-normal
-	
+		color $lr_col_brandBlue
+
+ul, ol		
+	&.remove-bullet
+		list-style-type none
+		margin 0
+		padding 0
+		
+//Light
+.fw300
+	font-weight 300
+//Normal
+.fw400
+	font-weight 400
+//Semi
+.fw600
+	font-weight 600
+//Bold
+.fw700
+	font-weight 700
+
+
+.jumbotron
+	border-radius 0
+
+
+
+
 

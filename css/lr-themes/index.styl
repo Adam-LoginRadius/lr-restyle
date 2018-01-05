@@ -9,11 +9,18 @@
 
 .bg-white
 	background white
+.bg-grey50
+	background $ma_col_grey50
+.bg-lr_col_sys_Blue-dark
+	background $lr_col_sys_Blue-dark
+.bg-lr_col_brandBlack
+	background $lr_col_brandBlack
 	
 .bg-lr_col_sys_LightBlue-normal
+body.error404
 	background-color $lr_col_sys_LightBlue-normal
 
-body.page
+body
 	background-repeat no-repeat
 	//Trail Background Theme color
 	&.page-id-5
@@ -26,3 +33,29 @@ body.page
 		background-size cover
 		background-position center
 		// background-position bottom
+body.partner_portal
+	&.page-id-2 
+		@extend .bg-grey50
+
+
+// ==========================================================================
+// Navigation
+// ==========================================================================
+
+// Sub Site Navigation Sub Title
+.logo-sub_title
+	position relative
+	&-partner_portal::after
+		/* Partner Protoal */
+		content "Partner Portal"
+		display block
+		position absolute
+		right 0
+		bottom -10px
+		font-size 0.75rem
+		font-family  'Ubuntu', 'Helvetica', 'Arial', Sans-serif
+		color $lr_base_text_color
+		font-weight 300
+		transform translate(0%, -50%)
+		
+

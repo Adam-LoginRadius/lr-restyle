@@ -2,8 +2,10 @@
 // Button
 // ==========================================================================
 
+
+// on a object
 a.btn
-	display block
+	display inline-block
 	font-weight 500
 	text-transform uppercase
 	text-align: center;
@@ -16,6 +18,8 @@ a.btn
 	padding 16px 12px
 	font-size 1rem
 	transition all 0.3s ease-in-out
+	&.btn-contain
+		display inline-block
 	&.btn-default
 		border 1px solid $ma_col_grey500
 	&.btn-primary
@@ -23,6 +27,8 @@ a.btn
 		background $lr_col_sys_Blue-normal
 		color white
 		&:hover
+		&:active
+		&:focus
 			border 1px solid $lr_col_sys_Blue-dark
 			background $lr_col_sys_Blue-dark
 	// &.btn-success
@@ -30,4 +36,41 @@ a.btn
 	// &.btn-warning
 	// &.btn-danger
 	&.btn-link
-		border: 1px solid transparent;
+		border 1px solid transparent
+	&.btn-revese
+		border 1px solid white
+		background white
+		&.lr_col_sys_Blue-dark
+			color $lr_col_sys_Blue-dark
+		&:hover
+		&:active
+		&:focus
+			background rgba(255,255,255,0)
+			color white
+
+// on the li object
+.btn
+	display block
+	width auto
+	&.btn-primary
+		border 1px solid $lr_col_sys_Blue-normal
+		background $lr_col_sys_Blue-normal
+		color white
+		&:hover
+		&:not([disabled]):not(.disabled):active
+		&:focus
+			border 1px solid $lr_col_sys_Blue-dark
+			background $lr_col_sys_Blue-dark
+		a
+			text-transform uppercase
+			text-align center
+			white-space nowrap
+			vertical-align middle
+			user-select none
+			color white
+			font-weight 600
+			text-decoration none
+
+	
+
+

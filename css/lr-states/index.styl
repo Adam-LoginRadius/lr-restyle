@@ -12,3 +12,39 @@
 // ==========================================================================
 // $States
 // ==========================================================================
+
+
+// Color White
+.text-white
+	h1, h2, h3, h4, h5, h6
+		color white
+	p, li
+		color rgba(white, $ma_opa_lightText-Primary)
+	a
+		color white
+		transition all ease-in-out 0.3s
+		&:hover
+			color white
+	.navbar-brand
+		transition all ease-in-out 0.3s
+		&::before
+			content " "
+			display block
+			background-image url('/wp-content/themes/Loginradius_Partner-Portal-2018/img/logo-w.svg')
+			position absolute
+			top 50%
+			left 0
+			height 32px
+			width 100%
+			transform translate(0%, -50%)
+		&::after
+			color white
+		img
+			opacity 0
+		
+.underline
+	text-decoration underline
+	
+
+
+@import 'print.styl'
