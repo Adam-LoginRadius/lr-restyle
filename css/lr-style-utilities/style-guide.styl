@@ -64,9 +64,13 @@ p, li
 		font-size 4em 
 		line-height 100%
 	&x1
-		font-size 4em 
+		@media screen and (min-width 992px)
+			font-size 4em
+			line-height 100%
 	&x2
-		font-size 8em 
+		@media screen and (min-width 992px)
+			font-size 8em
+			line-height 105%
 	
 .type-sub
 	font-weight 300

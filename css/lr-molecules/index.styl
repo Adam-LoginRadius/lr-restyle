@@ -9,5 +9,25 @@
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
 
+
+// ==========================================================================
+// Listd
+// ==========================================================================
+
+//Vertial A Link List
+ul.a-link-list-v
+	li 
+		margin-bottom 8px
+		&:last-child
+			margin-bottom 0
+	a
+		border-bottom 0px solid $lr_col_brandBlue
+		transition all ease-in-out 100ms
+		&:hover
+			text-decoration none
+			border-bottom 3px solid $lr_col_brandBlue
+
+
 @import 'navigation.styl'
 @import 'prograssBar.styl'
+@import 'footer.styl'

@@ -54,8 +54,10 @@ h4, .h4
 		line-height 30px
 
 h5, .h5 
-	font-size 1.313em
-	line-height 30px 
+	font-size 1rem
+	line-height 150%
+	@media screen and (min-width 768px)
+		font-size 17px
 
 p, .p
 	font-size 16px
@@ -63,7 +65,7 @@ p, .p
 
 a 
 	text-decoration none
-	color $lr_col_brandBlue-light
+	color $lr_col_brandBlue
 	&:hover
 		color $lr_col_brandBlue
 
@@ -79,6 +81,9 @@ ul, ol
 //Normal
 .fw400
 	font-weight 400
+//medium
+.fw500
+	font-weight 500
 //Semi
 .fw600
 	font-weight 600
