@@ -17,7 +17,7 @@
 //Vertial A Link List
 ul.a-link-list-v
 	li 
-		margin-bottom 8px
+		margin-bottom 4px
 		&:last-child
 			margin-bottom 0
 	a
@@ -26,6 +26,19 @@ ul.a-link-list-v
 		&:hover
 			text-decoration none
 			border-bottom 3px solid $lr_col_brandBlue
+			position relative 
+	// &:after
+	// 	content ""
+	// 	// position absolute 
+	// 	display block
+	// 	top -2px
+	// 	border-bottom 0px solid $lr_col_brandBlue
+	// 	transition all ease-in-out 100ms
+	// &:hover
+	// 	text-decoration none
+	// &:hover:after
+	// 	border-bottom 3px solid $lr_col_brandBlue
+
 
 
 @import 'navigation.styl'
