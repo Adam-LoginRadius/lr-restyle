@@ -334,6 +334,30 @@ li {
 .type-sub {
   font-weight: 300;
 }
+.box-shadow-depth1 {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.box-shadow-depth2 {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+.box-shadow-depth3 {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.box-shadow-depth4 {
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.box-shadow-depth5 {
+  -webkit-box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22), 0 25px 55px 0 rgba(0,0,0,0.21);
+  box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22), 0 25px 55px 0 rgba(0,0,0,0.21);
+}
+.box-shadow-depth6 {
+  -webkit-box-shadow: 0 27px 24px 0 rgba(0,0,0,0.2), 0 40px 77px 0 rgba(0,0,0,0.22);
+  box-shadow: 0 27px 24px 0 rgba(0,0,0,0.2), 0 40px 77px 0 rgba(0,0,0,0.22);
+}
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -526,6 +550,9 @@ ol.remove-bullet {
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
+.nav-item:last-of-type {
+  margin-right: -1em;
+}
 .nav-item a {
   display: block;
   padding: 0.5em 1em;
@@ -593,10 +620,59 @@ ul.gfield_checkbox {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row.no-gutter {
+  margin: 0;
+}
+[class*='card-big-'] {
+  min-height: 70vh;
+  max-height: 500px;
+}
+@media (max-width: 767px) {
+  .card-big-login {
+    min-height: 0px;
+  }
+}
+.card-big-login p:last-of-type {
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .card-big-login.px-5 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+.card-big-login > div {
+  width: 100%;
+}
+.bg-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 .constrained-icon {
   display: inline-block;
   height: 68px;
   margin-bottom: 12px;
+}
+.menu-CTA-notparter {
+  position: relative;
+}
+.menu-CTA-notparter:before {
+  content: 'NOT A LOGINRADIUS PARTNER?';
+  display: inline-block;
+  position: absolute;
+  color: #757575;
+  font-weight: 500;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  font-size: 12px;
+  left: -18px;
+  top: 50%;
 }
 a.btn,
 .base-form .gform_wrapper .gform_page_footer input,

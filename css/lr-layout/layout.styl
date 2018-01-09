@@ -44,6 +44,8 @@
 	flex-direction row
 .nav-item
 	transition all ease-in-out 0.3s
+	&:last-of-type
+		margin-right -1em
 	a
 		display block
 		padding 0.5em 1em
@@ -88,8 +90,10 @@ ul.gfield_checkbox
 	grid-row-gap 0
 li#field_2_11 
 	@extend .base-form.trial-form ul.gform_fields li.gfield:first-of-type
-
-//Absolute center
+	
+// ==========================================================================
+// Absolute center
+// ==========================================================================
 .center-abs
 	@media (min-height: 500px)
 		display block
@@ -104,8 +108,48 @@ li#field_2_11
 	left 50%
 	transform translate(-50%, -50%)		
 
+// ==========================================================================
+// Column Modification 
+// ==========================================================================
+.no-gutter > [class*='col-']
+	padding-right 0
+	padding-left 0
+
+.row.no-gutter
+	margin 0
+	
+
+// ==========================================================================
+// Cards
+// ==========================================================================
+
+//Size Control
+[class*='card-big-']
+	min-height 70vh
+	max-height 500px
+	
+.card-big-
+	&login
+		@media (max-width: 767px)
+			min-height 0px
+		p:last-of-type
+			margin-bottom 0
+		&.px-5
+			@media (max-width: 576px)
+				padding-left 2rem !important
+				padding-right 2rem !important
+		> div
+			width 100%
 
 
+// ==========================================================================
+// Background Postion
+// ==========================================================================
+
+.bg-cover
+	background-repeat no-repeat
+	background-position center center
+	background-size cover
 
 
 
