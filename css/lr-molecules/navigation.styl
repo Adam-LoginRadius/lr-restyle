@@ -5,24 +5,27 @@
 	& .has-depth
 		box-shadow $drop-shadow-depth-1
 	a
-		color $lr_col_brandBlue
-		font-weight 600
+		color $lr_col_brandBlack
+		font-weight 400
 		text-decoration none
 		cursor pointer
 		font-size 14px
+		transition all ease-in-out 0.3s
 		&:hover
-			opacity $ma_opa_lightText-Secondary
+			// opacity $ma_opa_lightText-Secondary
+			color $lr_col_brandBlue
 	.btn
 		a
 			font-size 0.85rem
+			color white
 			&:hover
 				opacity 1 //Btn is not effecred by the opacity
 
 .navbar-inverse
 	.navbar-toggler
-		border-color white
 		border none !important
 		padding 0.25rem 0.25rem
 		.material-icons
+			color $lr_col_brandBlack
 			display block
 			font-size 1.75rem

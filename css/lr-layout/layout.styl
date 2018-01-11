@@ -60,9 +60,18 @@ main
 	width 100%
 	margin 0 auto
 	max-width 1140px
-	@media (min-width: 576px)
-		padding-right: 16px;
-		padding-left: 16px;
+	padding-right: 16px;
+	padding-left: 16px;
+	@media (max-width: 1141px)
+		padding-right: 32px;
+		padding-left: 32px;
+	@media (max-width: 575px)
+		padding-right: 0px;
+		padding-left: 0px;
+.res-container-row
+	@media (max-width: 575px)
+		margin-right: 0px;
+		margin-left: 0px;
 
 // ==========================================================================
 // Gravity Form Layout
@@ -138,6 +147,10 @@ li#field_2_11
 			@media (max-width: 576px)
 				padding-left 2rem !important
 				padding-right 2rem !important
+		&.py-5
+			@media (max-width: 576px)
+				padding-top 2rem !important
+				padding-bottom 2rem !important
 		> div
 			width 100%
 
@@ -152,5 +165,14 @@ li#field_2_11
 	background-size cover
 
 
+// ==========================================================================
+// Postion
+// ==========================================================================
+.height-spacer
+	min-height 55vh
+	max-height 500px
+
+.fix-top
+	position fixed
 
 

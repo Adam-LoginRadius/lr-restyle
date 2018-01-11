@@ -1,0 +1,87 @@
+// ==========================================================================
+// Links
+// ==========================================================================
+
+
+// Block Links
+a.a-text-block-link
+	&:hover
+	&:focus
+	&:active
+		text-decoration none
+		h4
+		p
+			color $lr_col_sys_Blue-light
+		.cls-1 //svg
+			fill $lr_col_sys_Blue-light
+
+//Vertial A Link List
+[class*='a-link-list-v']
+	li 
+		margin-bottom 4px
+		&:last-child
+			margin-bottom 1rem
+	a
+		
+		border-bottom 0px solid $lr_col_brandBlue
+		transition all ease-in-out 100ms
+		&:hover
+			text-decoration none
+			border-bottom 3px solid $lr_col_brandBlue
+			position relative 
+.a-link-list-v
+	&-small-a
+		a
+			font-size 0.75rem
+			color $lr_col_brandBlack
+			&:hover
+				color $lr_col_brandBlue
+				border-bottom 1px solid $lr_col_brandBlue-light
+
+//Block A Link List
+.content
+	padding-bottom 1rem
+[class*='a-link-list-block']
+	a
+		height 12rem
+		padding 1rem
+		@extend .h5
+		font-weight 600
+		display flex
+		width 100%
+		background-color $lr_col_brandBlue
+		margin-bottom 20px
+		transition all ease-in-out 100ms
+		color white
+		top 0px
+		justify-content flex-end 
+		flex-wrap wrap
+		flex-direction column
+		// background-image url("/wp-content/uploads/sites/9/2018/01/Partner-login.jpg")
+		background-size cover
+		background-position center
+		&:hover
+			background-color rgba(74, 171, 227, 0.5)
+			position relative
+			box-shadow $drop-shadow-depth-2
+			top -4px
+			text-decoration none
+		*
+			color white
+			margin-bottom 0
+			font-weight 600
+		span
+			font-weight 400
+			display block
+			font-size 1rem
+			text-transform uppercase
+	&.row
+		margin-right -10px
+		margin-left -10px
+	[class*='col-']
+		padding-right 10px
+		padding-left 10px
+		
+
+
+

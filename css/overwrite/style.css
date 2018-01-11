@@ -462,15 +462,13 @@ h4,
   }
 }
 h5,
-.h5,
-[class*='a-link-list-block'] a {
+.h5 {
   font-size: 1rem;
   line-height: 150%;
 }
 @media screen and (min-width: 768px) {
   h5,
-  .h5,
-  [class*='a-link-list-block'] a {
+  .h5 {
     font-size: 17px;
   }
 }
@@ -695,9 +693,6 @@ ul.gfield_checkbox {
   min-height: 55vh;
   max-height: 500px;
 }
-.fix-top {
-  position: fixed;
-}
 .constrained-icon {
   display: inline-block;
   height: 68px;
@@ -886,7 +881,7 @@ a.a-text-block-link:active .cls-1 {
   margin-bottom: 4px;
 }
 [class*='a-link-list-v'] li:last-child {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 [class*='a-link-list-v'] a {
   border-bottom: 0px solid #29d;
@@ -903,66 +898,8 @@ a.a-text-block-link:active .cls-1 {
   font-size: 0.75rem;
   color: #0a2135;
 }
-.a-link-list-v-small-a a:hover {
+.a-link-list-v-small-a:hover {
   color: #29d;
-  border-bottom: 1px solid #4aabe3;
-}
-.content {
-  padding-bottom: 1rem;
-}
-[class*='a-link-list-block'] a {
-  height: 12rem;
-  padding: 1rem;
-  font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  background-color: #29d;
-  margin-bottom: 20px;
-  -webkit-transition: all ease-in-out 100ms;
-  -o-transition: all ease-in-out 100ms;
-  transition: all ease-in-out 100ms;
-  color: #fff;
-  top: 0px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-}
-[class*='a-link-list-block'] a:hover {
-  background-color: rgba(74,171,227,0.5);
-  position: relative;
-  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
-  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
-  top: -4px;
-  text-decoration: none;
-}
-[class*='a-link-list-block'] a * {
-  color: #fff;
-  margin-bottom: 0;
-  font-weight: 600;
-}
-[class*='a-link-list-block'] a span {
-  font-weight: 400;
-  display: block;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-[class*='a-link-list-block'].row {
-  margin-right: -10px;
-  margin-left: -10px;
-}
-[class*='a-link-list-block'] [class*='col-'] {
-  padding-right: 10px;
-  padding-left: 10px;
 }
 .navbar .has-depth {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
