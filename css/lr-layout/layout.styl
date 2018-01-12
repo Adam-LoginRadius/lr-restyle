@@ -55,6 +55,8 @@
 // ==========================================================================
 main
 	padding-top 80px
+	&.partner
+		min-height calc(100vh - 200px) /*Sticky Footer*/
 	
 .res-container
 	width 100%
@@ -178,5 +180,21 @@ li#field_2_11
 
 .fix-top
 	position fixed
+	&.side-menu-res
+		@media (max-width: 768px)
+			position relative
+
+
+// ==========================================================================
+// content
+// ==========================================================================
+[class*='content']
+	display block
+.content
+	&-partner
+		padding-bottom 1rem
+
+
+
 
 

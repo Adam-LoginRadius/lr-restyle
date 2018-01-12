@@ -579,6 +579,9 @@ ol.remove-bullet {
 main {
   padding-top: 80px;
 }
+main.partner {
+  min-height: calc(100vh - 200px) /*Sticky Footer*/;
+}
 .res-container {
   width: 100%;
   margin: 0 auto;
@@ -702,6 +705,17 @@ ul.gfield_checkbox {
 }
 .fix-top {
   position: fixed;
+}
+@media (max-width: 768px) {
+  .fix-top.side-menu-res {
+    position: relative;
+  }
+}
+[class*='content'] {
+  display: block;
+}
+.content-partner {
+  padding-bottom: 1rem;
 }
 .constrained-icon {
   display: inline-block;
@@ -965,13 +979,19 @@ a.a-text-block-link:active .cls-1 {
 .a-link-list-v-small-a a {
   font-size: 0.75rem;
   color: #0a2135;
+  -webkit-transition: font-weight ease-in-out 0.3s, color ease-in-out 0.3s, border-bottom ease-in-out 0.3s;
+  -o-transition: font-weight ease-in-out 0.3s, color ease-in-out 0.3s, border-bottom ease-in-out 0.3s;
+  transition: font-weight ease-in-out 0.3s, color ease-in-out 0.3s, border-bottom ease-in-out 0.3s;
+}
+.a-link-list-v-small-a a.current {
+  color: #1c7eb5;
+}
+.a-link-list-v-small-a a.current:before {
+  content: "";
 }
 .a-link-list-v-small-a a:hover {
   color: #29d;
   border-bottom: 1px solid #4aabe3;
-}
-.content {
-  padding-bottom: 1rem;
 }
 [class*='a-link-list-block'] a {
   height: 12rem;
@@ -999,18 +1019,23 @@ a.a-text-block-link:active .cls-1 {
   flex-direction: column;
   background-repeat: no-repeat;
   background-position: center center;
+  -webkit-transition: background-color ease-in-out 0.3s, top ease-in-out 0.1s;
+  -o-transition: background-color ease-in-out 0.3s, top ease-in-out 0.1s;
+  transition: background-color ease-in-out 0.3s, top ease-in-out 0.1s;
 }
 [class*='a-link-list-block'] a.bg-white {
   background-color: #fff !important;
-  border: 1px solid #e0e0e0;
 }
 [class*='a-link-list-block'] a:hover {
-  background-color: rgba(74,171,227,0.5);
+  background-color: #1c7eb5;
   position: relative;
   -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
   box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
   top: -4px;
   text-decoration: none;
+}
+[class*='a-link-list-block'] a:hover * {
+  color: #fff;
 }
 [class*='a-link-list-block'] a:hover span:after {
   text-decoration: underline;
@@ -1022,6 +1047,9 @@ a.a-text-block-link:active .cls-1 {
 }
 [class*='a-link-list-block'] a:hover span.type-int:after {
   content: "View the Page";
+}
+[class*='a-link-list-block'] a:hover span.video:after {
+  content: "Watch the Video";
 }
 [class*='a-link-list-block'] a * {
   color: #fff;
