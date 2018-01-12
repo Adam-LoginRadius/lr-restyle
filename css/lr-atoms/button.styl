@@ -52,6 +52,7 @@ a.btn
 .btn
 	display block
 	width auto
+	margin-left 0
 	&.btn-primary
 		border 1px solid $lr_col_sys_Blue-normal
 		background $lr_col_sys_Blue-normal
@@ -70,7 +71,35 @@ a.btn
 			color white
 			font-weight 600
 			text-decoration none
-
+	&.btn-link-like
+		padding 0
+	&.btn-see-all
+		padding 0
+		display inline-block
+		font-size 12px
+		text-transform none
+		color $lr_col_sys_Blue-normal
+		&:before
+			content "("
+			color $lr_col_brandBlack 
+		&:after
+			content ")"
+			color $lr_col_brandBlack 
+		&:hover
+		&:active
+		&:focus
+			color $lr_col_sys_Blue-light
+	&.btn-revese-border
+		border 1px solid $ma_col_grey500
+		background transparent
+		&:hover
+		&:active
+		&:focus
+			background $lr_col_brandBlack-light
+			border 1px solid $lr_col_brandBlack-light
+			
+				
+		
 	
 
 

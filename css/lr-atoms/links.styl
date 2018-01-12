@@ -5,15 +5,28 @@
 
 // Block Links
 a.a-text-block-link
+	h4
+		display table
+		position relative
+	.btn-link-like
+		color $lr_col_brandBlack
+		box-shadow 0 1px 0 0 currentColor
+		transition box-shadow 0.15s ease-in-out
+		border-radius 0
 	&:hover
 	&:focus
 	&:active
 		text-decoration none
 		h4
 		p
-			color $lr_col_sys_Blue-light
+		.btn-link-like
+			color $lr_col_sys_Blue-normal
+		.btn-link-like
+			box-shadow 0 3px 0 0 $lr_col_sys_Blue-light
 		.cls-1 //svg
 			fill $lr_col_sys_Blue-light
+		
+		
 
 //Vertial A Link List
 [class*='a-link-list-v']
@@ -57,15 +70,26 @@ a.a-text-block-link
 		justify-content flex-end 
 		flex-wrap wrap
 		flex-direction column
+		background-repeat no-repeat
+		background-position center center
 		// background-image url("/wp-content/uploads/sites/9/2018/01/Partner-login.jpg")
-		background-size cover
-		background-position center
+		&.bg-white
+			background-color white !important
+			border 1px solid $ma_col_grey300		
 		&:hover
 			background-color rgba(74, 171, 227, 0.5)
 			position relative
 			box-shadow $drop-shadow-depth-2
 			top -4px
 			text-decoration none
+			span:after
+				text-decoration underline
+				display block
+				font-size 12px
+			span.type-download:after
+				content "Download"
+			span.type-int:after
+				content "View the Page"
 		*
 			color white
 			margin-bottom 0
@@ -75,6 +99,7 @@ a.a-text-block-link
 			display block
 			font-size 1rem
 			text-transform uppercase
+			
 	&.row
 		margin-right -10px
 		margin-left -10px
