@@ -47,7 +47,7 @@
 	&:last-of-type
 		margin-right -1em
 	a
-		display block
+		display inline-block
 		padding 0.5em 1em
 		cursor pointer
 // ==========================================================================
@@ -184,6 +184,48 @@ li#field_2_11
 		@media (max-width: 768px)
 			position relative
 
+//video	
+.video_popout
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: rgba(0,0,0,0.75)
+	z-index: 99999999999
+	display: flex
+	justify-content: center
+	align-items: center
+	animation: pop 300ms linear both
+	.video
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		max-width: 960px
+		width: 100%
+		margin: 36px
+		> div
+			display initial
+		iframe
+			 width: 100%
+	
+@keyframes pop
+	0% { opacity: 0; top: -100%; bottom:100%;}
+	100% { opacity: 1; top: 0; bottom: 0; left:0; right:0;}
+	
+.video_popout i
+	// position: absolute;
+	color: white;
+	// top: 0;
+	// right: 0;
+	// transform: translate(100%, -100%);
+	cursor: pointer;
+	background: rgba(255, 255, 255, .25);
+	border-radius: 50%;
+	padding: 8px;
+	opacity: 0.75;
+	font-size: 16px;
 
 // ==========================================================================
 // content
