@@ -183,7 +183,9 @@ li#field_2_11
 	&.side-menu-res
 		@media (max-width: 768px)
 			position relative
-
+// ==========================================================================
+// Video Plugin
+// ==========================================================================
 //video	
 .video_popout
 	position: fixed
@@ -204,9 +206,8 @@ li#field_2_11
 		align-items: center
 		max-width: 960px
 		width: 100%
-		margin: 36px
-		> div
-			display initial
+		// > div
+		// 	display initial
 		iframe
 			 width: 100%
 	
@@ -215,11 +216,11 @@ li#field_2_11
 	100% { opacity: 1; top: 0; bottom: 0; left:0; right:0;}
 	
 .video_popout i
-	// position: absolute;
+	position: absolute;
 	color: white;
-	// top: 0;
-	// right: 0;
-	// transform: translate(100%, -100%);
+	top: 0px; // refer to this issues https://vimeo.com/forums/help/topic:291053
+	right: 0;
+	transform: translate(100%, -100%);
 	cursor: pointer;
 	background: rgba(255, 255, 255, .25);
 	border-radius: 50%;

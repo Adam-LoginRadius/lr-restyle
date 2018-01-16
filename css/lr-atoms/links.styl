@@ -73,7 +73,7 @@ a.a-text-block-link
 		color white
 		top 0px
 		justify-content flex-end 
-		flex-wrap wrap
+		// flex-wrap wrap
 		flex-direction column
 		background-repeat no-repeat
 		background-position center center
@@ -91,6 +91,8 @@ a.a-text-block-link
 			text-decoration none
 			*
 				color white
+			h4
+				-webkit-line-clamp: 3;
 			span:after
 				text-decoration underline
 				display block
@@ -98,9 +100,16 @@ a.a-text-block-link
 			span.type-download:after
 				content "Download"
 			span.type-int:after
-				content "View the Page"
+				content "Visit the Page"
 			span.video:after
 				content "Watch the Video"
+		h4
+			display: -webkit-box;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			min-width 0
 		*
 			color white
 			margin-bottom 0
@@ -109,7 +118,7 @@ a.a-text-block-link
 			font-weight 400
 			display block
 			font-size 1rem
-			text-transform uppercase	
+			text-transform uppercase
 	&.row
 		margin-right -10px
 		margin-left -10px
@@ -120,23 +129,16 @@ a.a-text-block-link
 //Block A Link video (over write the plugin)
 .a-link-list.video
 	justify-content flex-start
-	div
-		display inline-block
-		width 100%
 	.lr-resource-wrap
 		display flex
 		flex-wrap inherit
 	h3
 		@extend .h4
 		padding-bottom 1rem
-		// &:after
-		// 	content "Video"
-		// 	font-weight 400
-		// 	display block
-		// 	font-size 1rem
-		// 	text-transform uppercase
 	p
 		display none
+	.customer_video_loading
+		display inline-block
 	.video_thumb
 		background-size 120%
 		background-repeat no-repeat

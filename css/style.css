@@ -512,6 +512,9 @@ ol.remove-bullet {
 .jumbotron {
   border-radius: 0;
 }
+.border-grey {
+  border: 1px solid #eee;
+}
 .navbar {
   width: 100%;
   height: 80px;
@@ -746,16 +749,18 @@ ul.gfield_checkbox {
   align-items: center;
   max-width: 960px;
   width: 100%;
-  margin: 36px;
-}
-.video_popout .video > div {
-  display: initial;
 }
 .video_popout .video iframe {
   width: 100%;
 }
 .video_popout i {
+  position: absolute;
   color: #fff;
+  top: 0px;
+  right: 0;
+  -webkit-transform: translate(100%, -100%);
+  -ms-transform: translate(100%, -100%);
+  transform: translate(100%, -100%);
   cursor: pointer;
   background: rgba(255,255,255,0.25);
   border-radius: 50%;
@@ -1119,8 +1124,6 @@ a.a-text-block-link:active .cls-1 {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1145,6 +1148,9 @@ a.a-text-block-link:active .cls-1 {
 [class*='a-link-list-block'] a:hover * {
   color: #fff;
 }
+[class*='a-link-list-block'] a:hover h4 {
+  -webkit-line-clamp: 3;
+}
 [class*='a-link-list-block'] a:hover span:after {
   text-decoration: underline;
   display: block;
@@ -1154,10 +1160,19 @@ a.a-text-block-link:active .cls-1 {
   content: "Download";
 }
 [class*='a-link-list-block'] a:hover span.type-int:after {
-  content: "View the Page";
+  content: "Visit the Page";
 }
 [class*='a-link-list-block'] a:hover span.video:after {
   content: "Watch the Video";
+}
+[class*='a-link-list-block'] a h4 {
+  display: -webkit-box;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  min-width: 0;
 }
 [class*='a-link-list-block'] a * {
   color: #fff;
@@ -1183,10 +1198,6 @@ a.a-text-block-link:active .cls-1 {
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
-.a-link-list.video div {
-  display: inline-block;
-  width: 100%;
-}
 .a-link-list.video .lr-resource-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1199,6 +1210,9 @@ a.a-text-block-link:active .cls-1 {
 }
 .a-link-list.video p {
   display: none;
+}
+.a-link-list.video .customer_video_loading {
+  display: inline-block;
 }
 .a-link-list.video .video_thumb {
   background-size: 120%;
