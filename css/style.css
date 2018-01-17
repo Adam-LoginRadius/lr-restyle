@@ -898,7 +898,8 @@ ul.gfield_checkbox {
   -webkit-transform: translate(-100%, -50%);
   -ms-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
-  font-size: 12px;
+  line-height: 100%;
+  font-size: 14px;
   left: -18px;
   top: 50%;
 }
@@ -919,9 +920,9 @@ a.btn,
   border-radius: 4px;
   padding: 16px 12px;
   font-size: 1rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 a.btn.btn-contain,
 .base-form .gform_wrapper .gform_page_footer input.btn-contain,
@@ -985,18 +986,7 @@ a.btn.btn-revese:focus,
   width: auto;
   margin-left: 0;
 }
-.btn.btn-primary {
-  border: 1px solid #0076bd;
-  background: #0076bd;
-  color: #fff;
-}
-.btn.btn-primary:hover,
-.btn.btn-primary:not([disabled]):not(.disabled):active,
-.btn.btn-primary:focus {
-  border: 1px solid #00619b;
-  background: #00619b;
-}
-.btn.btn-primary a {
+.btn a {
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -1008,8 +998,32 @@ a.btn.btn-revese:focus,
   font-weight: 600;
   text-decoration: none;
 }
+.btn.btn-primary {
+  border: 1px solid #0076bd;
+  background: #0076bd;
+  color: #fff;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:not([disabled]):not(.disabled):active,
+.btn.btn-primary:focus {
+  border: 1px solid #00619b;
+  background: #00619b;
+}
 .btn.btn-link-like {
   padding: 0;
+}
+.btn.btn-revese-border {
+  border: 1px solid #9e9e9e;
+  color: #364959;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn.btn-revese-border:hover,
+.btn.btn-revese-border:active,
+.btn.btn-revese-border:focus {
+  background: #364959;
+  border: 1px solid #364959;
 }
 .btn.btn-see-all {
   padding: 0;
@@ -1031,26 +1045,69 @@ a.btn.btn-revese:focus,
 .btn.btn-see-all:focus {
   color: #2e8ec9;
 }
-.btn.btn-revese-border {
-  border: 1px solid #9e9e9e;
-  color: #364959;
-  background: transparent;
-  text-transform: uppercase;
+li.btn {
+  border: 0px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1;
+  font-size: 0;
+}
+li.btn a {
+  display: inline-block;
   font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  line-height: 100%;
+  border-radius: 4px;
+  padding: 0.5rem 12px;
+  font-size: 1rem;
+  -webkit-transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out, background 0.3s ease-in-out;
 }
-.btn.btn-revese-border a {
+li.btn[class*="btn-"] {
+  background: transparent;
+  border: 1px solid transparent;
+}
+li.btn.btn-primary a {
+  border: 1px solid #0076bd;
+  background: #0076bd;
+  color: #fff;
+}
+li.btn.btn-primary:hover,
+li.btn.btn-primary:not([disabled]):not(.disabled):active,
+li.btn.btn-primary:focus {
+  background: transparent;
+  border: 1px solid transparent;
+}
+li.btn.btn-primary:hover a,
+li.btn.btn-primary:not([disabled]):not(.disabled):active a,
+li.btn.btn-primary:focus a {
+  background: #00619b;
+  border: 1px solid #00619b;
+}
+li.btn.btn-revese-border a {
   color: #364959;
+  border: 1px solid #9e9e9e;
 }
-.btn.btn-revese-border:hover,
-.btn.btn-revese-border:active,
-.btn.btn-revese-border:focus {
+li.btn.btn-revese-border:hover,
+li.btn.btn-revese-border:active,
+li.btn.btn-revese-border:focus {
+  background: transparent;
+  border: 1px solid transparent;
+}
+li.btn.btn-revese-border:hover a,
+li.btn.btn-revese-border:active a,
+li.btn.btn-revese-border:focus a {
+  color: #fff;
   background: #364959;
   border: 1px solid #364959;
-}
-.btn.btn-revese-border:hover a,
-.btn.btn-revese-border:active a,
-.btn.btn-revese-border:focus a {
-  color: #fff;
 }
 .card {
   background-color: #fff;
@@ -1172,9 +1229,6 @@ a.a-text-block-link:active .cls-1 {
   width: 100%;
   background-color: #29d;
   margin-bottom: 20px;
-  -webkit-transition: all ease-in-out 100ms;
-  -o-transition: all ease-in-out 100ms;
-  transition: all ease-in-out 100ms;
   color: #fff;
   top: 0px;
   -webkit-box-pack: end;
@@ -1194,9 +1248,6 @@ a.a-text-block-link:active .cls-1 {
   background-color: #fff !important;
 }
 [class*='a-link-list-block'] a:hover {
-  -webkit-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s;
   background-color: #1c7eb5;
   position: relative;
   -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
@@ -1331,6 +1382,11 @@ a.a-text-block-link:active .cls-1 {
 .navbar .btn {
   margin-left: 1rem;
 }
+@media (max-width: 991px) {
+  .navbar .btn {
+    margin-left: 0.5rem;
+  }
+}
 .navbar .btn a {
   font-size: 0.85rem;
   color: #fff;
@@ -1355,23 +1411,23 @@ a.a-text-block-link:active .cls-1 {
   font-size: 1.75rem;
 }
 @media (max-width: 767px) {
-  .navbar-collapse.collapse.partner {
+  .navbar-collapse {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
     position: absolute;
-    background: #fafafa;
+    background: #0a2135;
     z-index: 90;
     width: 100%;
     top: 80px;
     left: 0;
   }
-  .navbar-collapse.collapse.partner.show .navbar-nav {
+  .navbar-collapse .navbar-nav {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
     -webkit-box-align: left;
     -ms-flex-align: left;
@@ -1379,16 +1435,39 @@ a.a-text-block-link:active .cls-1 {
     padding-right: 2em;
     padding-left: 2rem;
   }
-  .navbar-collapse.collapse.partner.show .nav-item a {
+  .navbar-collapse .nav-item a {
     padding: 0.5rem 0rem;
+    color: #fff !important;
+    font-size: 14px;
+    -webkit-transition: opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s;
+    -o-transition: opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s;
+    transition: opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s;
   }
-  .navbar-collapse.collapse.partner.show .btn {
+  .navbar-collapse .nav-item a:hover {
+    color: #69d2ff !important;
+  }
+  .navbar-collapse .btn[class*="btn-"] {
     margin-left: 0;
     margin-top: 1rem;
     display: inline-block;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .navbar-collapse .btn[class*="btn-"] a {
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,0.54) !important;
+    background: transparent !important;
+  }
+  .navbar-collapse .btn[class*="btn-"] a:hover {
+    background: transparent;
+    border: 1px solid #fff !important;
+  }
+}
+@media (max-width: 767px) and (max-width: 576px) {
+  .navbar-collapse .navbar-nav {
+    padding-right: 1em;
+    padding-left: 1rem;
   }
 }
 .progress_bar {
@@ -1499,9 +1578,9 @@ a.a-text-block-link:active .cls-1 {
 }
 .text-white a {
   color: #fff;
-  -webkit-transition: all ease-in-out 0.3s;
-  -o-transition: all ease-in-out 0.3s;
-  transition: all ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s;
 }
 .text-white a:hover {
   color: #fff;
@@ -1537,11 +1616,12 @@ a.a-text-block-link:active .cls-1 {
 .text-white .navbar-toggler .material-icons {
   color: #fff;
 }
-.text-white .btn {
-  border: 1px solid rgba(255,255,255,0.54);
+.text-white .btn:hover {
+  opacity: 1;
 }
-.text-white .btn a {
+.text-white .btn[class*="btn-"] a {
   color: #fff;
+  border: 1px solid rgba(255,255,255,0.54);
 }
 .underline {
   text-decoration: underline;

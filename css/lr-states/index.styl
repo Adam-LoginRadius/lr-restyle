@@ -22,7 +22,7 @@
 		color rgba(white, $ma_opa_lightText-Primary)
 	a
 		color white
-		transition all ease-in-out 0.3s
+		transition opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s
 		&:hover
 			color white
 			opacity $ma_opa_lightText-Secondary
@@ -48,9 +48,12 @@
 		.material-icons
 			color white
 	.btn
-		border 1px solid rgba(255,255,255, $ma_opa_darkText-Secondary )
-		a
-			color white
+		&:hover
+			opacity 1
+		&[class*="btn-"]
+			a
+				color white
+				border 1px solid rgba(255,255,255, $ma_opa_darkText-Secondary )
 
 				
 .underline

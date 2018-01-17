@@ -10,14 +10,13 @@ a.btn
 	text-transform uppercase
 	text-align: center;
 	white-space: nowrap;
-	// vertical-align: middle;
 	user-select none
 	border: 1px solid transparent;
 	line-height 1
 	border-radius 4px
 	padding 16px 12px
 	font-size 1rem
-	transition all 0.3s ease-in-out
+	transition color 0.3s ease-in-out, border 0.3s ease-in-out, background 0.3s ease-in-out
 	&.btn-contain
 		display inline-block
 	&.btn-default
@@ -48,11 +47,19 @@ a.btn
 			background rgba(255,255,255,0)
 			color white
 
-// on the li object
+//to Any object
 .btn
 	display block
 	width auto
-	margin-left 0
+	margin-left 0 //overcome random CSS sheet
+	a
+		text-transform uppercase
+		text-align center
+		white-space nowrap
+		user-select none
+		color white
+		font-weight 600
+		text-decoration none
 	&.btn-primary
 		border 1px solid $lr_col_sys_Blue-normal
 		background $lr_col_sys_Blue-normal
@@ -62,17 +69,19 @@ a.btn
 		&:focus
 			border 1px solid $lr_col_sys_Blue-dark
 			background $lr_col_sys_Blue-dark
-		a
-			text-transform uppercase
-			text-align center
-			white-space nowrap
-			// vertical-align middle
-			user-select none
-			color white
-			font-weight 600
-			text-decoration none
 	&.btn-link-like
 		padding 0
+	&.btn-revese-border
+		border 1px solid $ma_col_grey500
+		color $lr_col_brandBlack-light
+		background transparent
+		text-transform uppercase
+		font-weight 600
+		&:hover
+		&:active
+		&:focus
+			background $lr_col_brandBlack-light
+			border 1px solid $lr_col_brandBlack-light
 	&.btn-see-all
 		padding 0
 		display inline-block
@@ -89,25 +98,57 @@ a.btn
 		&:active
 		&:focus
 			color $lr_col_sys_Blue-light
-	&.btn-revese-border
-		border 1px solid $ma_col_grey500
-		color $lr_col_brandBlack-light
-		background transparent
-		text-transform uppercase
+			
+// on the li object
+li.btn
+	border 0px
+	padding 0
+	display flex
+	align-items center
+	line-height 1
+	font-size 0
+	a
+		display inline-block
 		font-weight 600
+		text-transform uppercase
+		white-space: nowrap;
+		border 1px solid transparent;
+		line-height 100%
+		border-radius 4px
+		padding 0.5rem 12px
+		font-size 1rem
+		transition color 0.3s ease-in-out, border 0.3s ease-in-out, background 0.3s ease-in-out
+	&[class*="btn-"]
+		background transparent
+		border 1px solid transparent
+	&.btn-primary
+		a
+			border 1px solid $lr_col_sys_Blue-normal
+			background $lr_col_sys_Blue-normal
+			color white
+		&:hover
+		&:not([disabled]):not(.disabled):active
+		&:focus
+			background transparent
+			border 1px solid transparent
+			a
+				background $lr_col_sys_Blue-dark
+				border 1px solid $lr_col_sys_Blue-dark
+	&.btn-revese-border
 		a
 			color $lr_col_brandBlack-light
+			border 1px solid $ma_col_grey500
 		&:hover
 		&:active
 		&:focus
-			background $lr_col_brandBlack-light
-			border 1px solid $lr_col_brandBlack-light
+			background transparent
+			border 1px solid transparent
 			a
 				color white
+				background $lr_col_brandBlack-light
+				border 1px solid $lr_col_brandBlack-light
 				
-			
-				
+
 		
-	
 
 

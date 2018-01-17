@@ -16,6 +16,8 @@
 			color $lr_col_brandBlue
 	.btn
 		margin-left 1rem
+		@media (max-width: 991px)
+			margin-left 0.5rem
 		a
 			font-size 0.85rem
 			color white
@@ -41,35 +43,48 @@
 // ==========================================================================
 // Navigation - sub menu show
 // ==========================================================================
-@media (max-width: 767px)		
-	.navbar-collapse.collapse.partner
-		// box-shadow inset $drop-shadow-depth-2
+
+.navbar-collapse
+	@media (max-width: 767px)
+		// box-shadow inset 0 5px 11px -6px rgba(0,0,0,.16), inset 0 4px 15px -5px rgba(0,0,0,.12), $drop-shadow-depth-1
 		box-shadow $drop-shadow-depth-2
 		position absolute
-		background $ma_col_grey50
+		background $lr_col_brandBlack
 		z-index 90
 		width 100%
 		top 80px
 		left 0
-	.navbar-collapse.collapse.partner.show
 		.navbar-nav
 			width 100%
 			flex-direction column
-			padding-top 2rem
+			padding-top 1rem
 			padding-bottom 2rem
 			align-items left
 			padding-right 2em
 			padding-left  2rem
-			// @extends .nav-container
+			@media (max-width: 576px)
+				padding-right 1em
+				padding-left  1rem
 		.nav-item a
 			padding 0.5rem 0rem
-		.btn
+			color white !important
+			font-size 14px
+			transition opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s
+			&:hover
+				color $lr_col_sys_LightBlue-light !important
+		.btn[class*="btn-"]
 			margin-left 0
 			margin-top 1rem
 			display inline-block
 			width fit-content
-
-
-
+			a
+				color white !important
+				border 1px solid rgba(255,255,255, $ma_opa_darkText-Secondary ) !important
+				background transparent !important
+				&:hover
+					// color $lr_col_sys_LightBlue-light !important
+					// border 1px solid $lr_col_sys_LightBlue-light !important
+					background transparent
+					border 1px solid rgba(255,255,255, 1 ) !important
 
 
