@@ -15,6 +15,7 @@
 	width 100%
 	height 80px
 	transition all 0.3s ease-in-out
+	justify-content center
 	&-brand
 		padding .75em 0
 	&-fixed-top
@@ -43,13 +44,16 @@
 .navbar-nav // Nav spacing
 	flex-direction row
 .nav-item
-	transition all ease-in-out 0.3s
+	transition color ease-in-out 0.3s
 	&:last-of-type
 		margin-right -1em
 	a
 		display inline-block
 		padding 0.5em 1em
 		cursor pointer
+		@media (max-width: 991px)
+			padding 0.5em .5em
+
 // ==========================================================================
 // Main
 // ==========================================================================
@@ -57,14 +61,13 @@ main
 	padding-top 80px
 	&.partner
 		min-height calc(100vh - 200px) /*Sticky Footer*/
-	
 .res-container
 	width 100%
 	margin 0 auto
 	max-width 1140px
 	padding-right: 16px;
 	padding-left: 16px;
-	@media (max-width: 1141px)
+	@media (max-width: 1173px)
 		padding-right: 32px;
 		padding-left: 32px;
 	@media (max-width: 575px)
@@ -72,8 +75,8 @@ main
 		padding-left: 0px;
 .res-container-row
 	@media (max-width: 575px)
-		margin-right: 0px;
-		margin-left: 0px;
+		padding-right: 16px;
+		padding-left: 16px;
 
 // ==========================================================================
 // Gravity Form Layout
@@ -129,7 +132,6 @@ li#field_2_11
 .row.no-gutter
 	margin 0
 	
-
 // ==========================================================================
 // Cards
 // ==========================================================================
@@ -160,7 +162,6 @@ li#field_2_11
 // ==========================================================================
 // Background Postion
 // ==========================================================================
-
 .bg-cover
 	background-repeat no-repeat
 	background-position center center
@@ -180,9 +181,13 @@ li#field_2_11
 
 .fix-top
 	position fixed
+	@media (max-width: 768px)
+		width 100%
+		position relative 
 	&.side-menu-res
 		@media (max-width: 768px)
 			position relative
+			
 // ==========================================================================
 // Video Plugin
 // ==========================================================================
@@ -236,6 +241,28 @@ li#field_2_11
 .content
 	&-partner
 		padding-bottom 1rem
+
+.layout
+	display flex
+	width 100%
+	&.layout-l2-r10
+		.col-l2
+			display inline-block
+			width 190px
+			margin-right 2rem
+			@media (max-width: 768px)
+				width 100%
+				position relative 
+				padding-bottom 1rem
+				margin-right 0rem
+		.col-r10
+			display inline-block
+			width 100%
+		@media (max-width: 768px)
+			flex-direction column
+			
+	
+
 
 
 

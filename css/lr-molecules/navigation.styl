@@ -10,27 +10,24 @@
 		text-decoration none
 		cursor pointer
 		font-size 14px
-		transition all ease-in-out 0.3s
+		transition color ease-in-out 0.3s
 		&:hover
 			// opacity $ma_opa_lightText-Secondary
 			color $lr_col_brandBlue
 	.btn
+		margin-left 1rem
 		a
 			font-size 0.85rem
 			color white
 			&:hover
 				opacity 1 //Btn is not effecred by the opacity
-	.btn-revese-border
-		margin-left 1rem
-		a
-			color $lr_col_brandBlack-light
-			text-transform uppercase
-			font-weight 600
-		&:hover
-		&:active
-		&:focus
+		&.btn-revese-border
 			a
-				color white
+				color $lr_col_brandBlack-light
+				font-weight 600
+			&:hover
+				a
+					color white
 					
 .navbar-inverse
 	.navbar-toggler
@@ -40,3 +37,39 @@
 			color $lr_col_brandBlack
 			display block
 			font-size 1.75rem
+
+// ==========================================================================
+// Navigation - sub menu show
+// ==========================================================================
+@media (max-width: 767px)		
+	.navbar-collapse.collapse.partner
+		// box-shadow inset $drop-shadow-depth-2
+		box-shadow $drop-shadow-depth-2
+		position absolute
+		background $ma_col_grey50
+		z-index 90
+		width 100%
+		top 80px
+		left 0
+	.navbar-collapse.collapse.partner.show
+		.navbar-nav
+			width 100%
+			flex-direction column
+			padding-top 2rem
+			padding-bottom 2rem
+			align-items left
+			padding-right 2em
+			padding-left  2rem
+			// @extends .nav-container
+		.nav-item a
+			padding 0.5rem 0rem
+		.btn
+			margin-left 0
+			margin-top 1rem
+			display inline-block
+			width fit-content
+
+
+
+
+
