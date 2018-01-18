@@ -803,7 +803,6 @@ ul.gfield_checkbox {
   .layout.layout-l2-r10 .col-l2 {
     width: 100%;
     position: relative;
-    padding-bottom: 1rem;
     margin-right: 0rem;
   }
 }
@@ -1219,6 +1218,11 @@ a.a-text-block-link:active .cls-1 {
   color: #29d;
   border-bottom: 1px solid #4aabe3;
 }
+@media (min-width: 768px) {
+  .a-link-list-v-small-a#side-menu.toggleable-sm.collapse {
+    display: block;
+  }
+}
 [class*='a-link-list-block'] a {
   height: 12rem;
   padding: 1rem;
@@ -1411,7 +1415,7 @@ a.a-text-block-link:active .cls-1 {
   font-size: 1.75rem;
 }
 @media (max-width: 767px) {
-  .navbar-collapse {
+  .navbar-collapse.partner {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
     position: absolute;
@@ -1421,7 +1425,7 @@ a.a-text-block-link:active .cls-1 {
     top: 80px;
     left: 0;
   }
-  .navbar-collapse .navbar-nav {
+  .navbar-collapse.partner .navbar-nav {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1435,7 +1439,7 @@ a.a-text-block-link:active .cls-1 {
     padding-right: 2em;
     padding-left: 2rem;
   }
-  .navbar-collapse .nav-item a {
+  .navbar-collapse.partner .nav-item a {
     padding: 0.5rem 0rem;
     color: #fff !important;
     font-size: 14px;
@@ -1443,10 +1447,10 @@ a.a-text-block-link:active .cls-1 {
     -o-transition: opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s;
     transition: opacity ease-in-out 0.3s, color ease-in-out 0.3s, background ease-in-out 0.3s;
   }
-  .navbar-collapse .nav-item a:hover {
+  .navbar-collapse.partner .nav-item a:hover {
     color: #69d2ff !important;
   }
-  .navbar-collapse .btn[class*="btn-"] {
+  .navbar-collapse.partner .btn[class*="btn-"] {
     margin-left: 0;
     margin-top: 1rem;
     display: inline-block;
@@ -1454,20 +1458,41 @@ a.a-text-block-link:active .cls-1 {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .navbar-collapse .btn[class*="btn-"] a {
+  .navbar-collapse.partner .btn[class*="btn-"] a {
     color: #fff !important;
     border: 1px solid rgba(255,255,255,0.54) !important;
     background: transparent !important;
   }
-  .navbar-collapse .btn[class*="btn-"] a:hover {
+  .navbar-collapse.partner .btn[class*="btn-"] a:hover {
     background: transparent;
     border: 1px solid #fff !important;
   }
 }
 @media (max-width: 767px) and (max-width: 576px) {
-  .navbar-collapse .navbar-nav {
+  .navbar-collapse.partner .navbar-nav {
     padding-right: 1em;
     padding-left: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .side-menu-res {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+  }
+  .side-menu-res button {
+    padding: 0;
+    margin-left: auto;
+  }
+  .side-menu-res button i {
+    font-size: 2rem;
+    color: #616161;
+  }
+  .side-menu-res ul {
+    background-color: #fff;
+    padding: 1rem;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 }
 .progress_bar {

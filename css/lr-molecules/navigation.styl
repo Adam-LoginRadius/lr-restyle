@@ -41,10 +41,9 @@
 			font-size 1.75rem
 
 // ==========================================================================
-// Navigation - sub menu show
+// Navigation - Mobile Menu
 // ==========================================================================
-
-.navbar-collapse
+.navbar-collapse.partner
 	@media (max-width: 767px)
 		// box-shadow inset 0 5px 11px -6px rgba(0,0,0,.16), inset 0 4px 15px -5px rgba(0,0,0,.12), $drop-shadow-depth-1
 		box-shadow $drop-shadow-depth-2
@@ -87,4 +86,21 @@
 					background transparent
 					border 1px solid rgba(255,255,255, 1 ) !important
 
-
+// ==========================================================================
+// Navigation - Side menu
+// ==========================================================================
+@media (max-width: 768px)
+	.side-menu-res
+		position absolute
+		right 0
+		z-index 10
+		button
+			padding 0
+			margin-left auto
+			i 
+				font-size 2rem
+				color $ma_col_grey700
+		ul
+			background-color white
+			padding 1rem
+			box-shadow $drop-shadow-depth-3
