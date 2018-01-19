@@ -97,31 +97,19 @@ $(document).ready(function () {
             $(this).addClass("current");
         }
     });
-
-    // if($('#side-menu li a').data('clicked')) {
-    //     $(this).addClass("current");
-    // } else {
-    //     $('#side-menu li a').removeClass("current");
-    // }
-
-    // //* Resize Hide-Show - not working*//
-    // function mediaSize() { 
-    //     /* Set the matchMedia */
-    //     if (window.matchMedia('(min-width: 767px)').matches) {
-    //     /* Changes when we reach the min-width  */
-    //         $('.content-partner').hide();
-    //         $('.content-partner').first().show();
-    //     } else {
-    //     /* Reset for CSS changes – Still need a better way to do this! */
-    //         $('.content-partner').show();
-    // };
-    
-    // /* Call the function */
-    // mediaSize();
-    // /* Attach the function to the resize event listener */
-    // window.addEventListener('resize', mediaSize, false);
-
     /****  Hide Show block ****/
+
+    /****  Switch hamburger icon ****/
+    $('#menu-button-parent').click(function(){
+        if($(this).hasClass('collapsed')){
+            document.getElementById("menu").innerHTML="&#xE5CD;"; //close
+        }else{
+            document.getElementById("menu").innerHTML="&#xE5D2;"; //menu
+        }
+    
+    });
+    /****  Switch hamburger icon ****/
+
     
 
 });

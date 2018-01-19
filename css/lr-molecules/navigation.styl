@@ -34,7 +34,7 @@
 .navbar-inverse
 	.navbar-toggler
 		border none !important
-		padding 0.25rem 0.25rem
+		padding 0rem 0rem
 		.material-icons
 			color $lr_col_brandBlack
 			display block
@@ -50,9 +50,9 @@
 		position absolute
 		background $lr_col_brandBlack
 		z-index 90
-		width 100%
-		top 80px
-		left 0
+		width 100vw
+		top 66px
+		left -16px
 		.navbar-nav
 			width 100%
 			flex-direction column
@@ -102,5 +102,30 @@
 				color $ma_col_grey700
 		ul
 			background-color white
-			padding 1rem
 			box-shadow $drop-shadow-depth-3
+			padding-top 0rem
+			padding-bottom 0rem
+			li, li:last-child
+				margin-bottom 0
+			a
+				font-size 0.75rem
+				padding-left 1rem
+				padding-right 1rem
+				padding-top 0.5rem
+				padding-bottom 0.5rem
+				display block
+				&:hover
+				&.current
+					color white
+					background-color $ma_col_grey600
+					border-bottom 0px solid $lr_col_brandBlue-light
+				
+
+
+
+
+
+
+
+
+
