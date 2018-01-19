@@ -301,11 +301,13 @@ h5,
 h6 {
   font-family: 'Ubuntu', 'Helvetica', 'Arial', Sans-serif;
   color: #0a2135;
+  -webkit-font-smoothing: antialiased;
 }
 p,
 li {
   font-family: 'Open Sans', 'Helvetica', 'Arial', Sans-serif;
   color: rgba(10,33,53,0.8);
+  -webkit-font-smoothing: antialiased;
 }
 @media screen and (min-width: 768px) {
   .type-super {
@@ -916,6 +918,9 @@ ul.gfield_checkbox {
   left: -18px;
   top: 50%;
 }
+button {
+  background-color: transparent;
+}
 a.btn,
 .base-form .gform_wrapper .gform_page_footer input,
 .base-form .gform_wrapper .gform_footer input {
@@ -998,6 +1003,7 @@ a.btn.btn-revese:focus,
   display: block;
   width: auto;
   margin-left: 0;
+  background-color: transparent;
 }
 .btn a {
   text-transform: uppercase;
