@@ -568,7 +568,6 @@ ol.remove-bullet {
   align-items: center;
   width: 100%;
   max-width: 1140px;
-  margin: 0 auto;
   align-items: center;
   position: relative;
   -webkit-box-pack: justify;
@@ -696,26 +695,26 @@ ul.gfield_checkbox {
   max-height: 500px;
 }
 @media (max-width: 767px) {
-  .card-big-login {
+  .card-big-logins {
     min-height: 0px;
   }
 }
-.card-big-login p:last-of-type {
+.card-big-logins p:last-of-type {
   margin-bottom: 0;
 }
 @media (max-width: 576px) {
-  .card-big-login.px-5 {
+  .card-big-logins.px-5 {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
 }
 @media (max-width: 576px) {
-  .card-big-login.py-5 {
+  .card-big-logins.py-5 {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
   }
 }
-.card-big-login > div {
+.card-big-logins > div {
   width: 100%;
 }
 .bg-cover {
@@ -781,6 +780,14 @@ ul.gfield_checkbox {
   width: 100%;
 }
 .video_popout .video iframe {
+  width: 100%;
+}
+.a-link-list.video > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
 }
 .video_popout i {
@@ -1165,6 +1172,9 @@ li.btn.btn-revese-border:focus a {
 a.a-text-block-link h4 {
   display: table;
   position: relative;
+}
+a.a-text-block-link svg {
+  max-width: 84px;
 }
 a.a-text-block-link .btn-link-like {
   color: #0a2135;

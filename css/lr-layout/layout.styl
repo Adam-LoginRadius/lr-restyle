@@ -35,7 +35,7 @@
 	align-items center
 	width 100%
 	max-width 1140px
-	margin 0 auto
+	// margin 0 auto
 	align-items center
 	position relative
 	justify-content space-between
@@ -144,7 +144,7 @@ li#field_2_11
 	max-height 500px
 	
 .card-big-
-	&login
+	&logins
 		@media (max-width: 767px)
 			min-height 0px
 		p:last-of-type
@@ -157,7 +157,7 @@ li#field_2_11
 			@media (max-width: 576px)
 				padding-top 2rem !important
 				padding-bottom 2rem !important
-		> div
+		& > div
 			width 100%
 
 
@@ -213,10 +213,13 @@ li#field_2_11
 		align-items: center
 		max-width: 960px
 		width: 100%
-		// > div
-		// 	display initial
 		iframe
 			 width: 100%
+	
+.a-link-list.video > div:first-child
+	display flex
+	flex-wrap wrap
+	width: 100%
 	
 @keyframes pop
 	0% { opacity: 0; top: -100%; bottom:100%;}
