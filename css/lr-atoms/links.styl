@@ -19,6 +19,7 @@ a.a-text-block-link
 		box-shadow 0 1px 0 0 currentColor
 		transition box-shadow 0.15s ease-in-out
 		border-radius 0
+		border-bottom 1px solid #0a2135
 	&:hover
 	&:focus
 	&:active
@@ -29,9 +30,9 @@ a.a-text-block-link
 			color $lr_col_sys_Blue-normal
 		.btn-link-like
 			box-shadow 0 3px 0 0 $lr_col_sys_Blue-light
+			border-bottom 1px solid $lr_col_sys_Blue-light
 		.cls-1 //svg
 			fill $lr_col_sys_Blue-light
-		
 		
 
 //Vertial A Link List
@@ -71,7 +72,7 @@ a.a-text-block-link
 //Block A Link List
 [class*='a-link-list-block']
 	a
-		height 12rem
+		height 10rem
 		padding 1rem
 		@extends .h5
 		font-weight 600
@@ -103,7 +104,7 @@ a.a-text-block-link
 			*
 				color white
 			h4
-				-webkit-line-clamp: 3;
+				-webkit-line-clamp: 2;
 			span:after
 				text-decoration underline
 				display block
@@ -118,7 +119,7 @@ a.a-text-block-link
 			display: -webkit-box;
 			overflow: hidden;
 			text-overflow: ellipsis;
-			-webkit-line-clamp: 4;
+			-webkit-line-clamp: 3;
 			-webkit-box-orient: vertical;
 			min-width 0
 		*

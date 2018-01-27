@@ -1057,6 +1057,7 @@ a.btn.btn-revese:focus,
   font-size: 14px;
   text-transform: none;
   color: #0076bd;
+  text-decoration: underline;
 }
 .btn.btn-see-all:before {
   content: "(";
@@ -1186,6 +1187,7 @@ a.a-text-block-link .btn-link-like {
   transition: box-shadow 0.15s ease-in-out;
   transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   border-radius: 0;
+  border-bottom: 1px solid #0a2135;
 }
 a.a-text-block-link:hover,
 a.a-text-block-link:focus,
@@ -1208,6 +1210,7 @@ a.a-text-block-link:focus .btn-link-like,
 a.a-text-block-link:active .btn-link-like {
   -webkit-box-shadow: 0 3px 0 0 #2e8ec9;
   box-shadow: 0 3px 0 0 #2e8ec9;
+  border-bottom: 1px solid #2e8ec9;
 }
 a.a-text-block-link:hover .cls-1,
 a.a-text-block-link:focus .cls-1,
@@ -1254,7 +1257,7 @@ a.a-text-block-link:active .cls-1 {
   }
 }
 [class*='a-link-list-block'] a {
-  height: 12rem;
+  height: 10rem;
   padding: 1rem;
   font-weight: 600;
   display: -webkit-box;
@@ -1293,7 +1296,7 @@ a.a-text-block-link:active .cls-1 {
   color: #fff;
 }
 [class*='a-link-list-block'] a:hover h4 {
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
 }
 [class*='a-link-list-block'] a:hover span:after {
   text-decoration: underline;
@@ -1314,7 +1317,7 @@ a.a-text-block-link:active .cls-1 {
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   min-width: 0;
 }
