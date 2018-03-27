@@ -32,7 +32,14 @@ a.btn
 		&:focus
 			border 1px solid $lr_col_sys_Blue-dark
 			background $lr_col_sys_Blue-dark
-	// &.btn-success
+	&.btn-success
+		background-color $lr_col_sys_green-normal
+		border 1px solid $lr_col_sys_green-normal
+		&:hover
+		&:focus
+		&:active
+			background-color $lr_col_sys_green-dark 
+			border 1px solid $lr_col_sys_green-dark 
 	// &.btn-info
 	// &.btn-warning
 	// &.btn-danger
@@ -102,6 +109,7 @@ a.btn
 		&:active
 		&:focus
 			color $lr_col_sys_Blue-light
+
 			
 // on the li object
 li.btn
