@@ -1308,6 +1308,7 @@ a.a-text-block-link:active .cls-1 {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  cursor: pointer;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1345,6 +1346,12 @@ a.a-text-block-link:active .cls-1 {
 }
 [class*='a-link-list-block'] a:hover span.type-int:after {
   content: "Visit the Page";
+}
+[class*='a-link-list-block'] a:hover span.type-site:after {
+  content: "Visit the Site";
+}
+[class*='a-link-list-block'] a:hover span.type-blog:after {
+  content: "Read the Blog";
 }
 [class*='a-link-list-block'] a:hover span.video:after {
   content: "Watch the Video";
@@ -1736,6 +1743,18 @@ a.a-text-block-link:active .cls-1 {
 }
 .underline {
   text-decoration: underline;
+}
+.bg-lr-black {
+  background-color: #0a2135;
+}
+.bg-lr-blue {
+  background-color: #29d;
+}
+.bg-lr-blue_light {
+  background-color: #4aabe3;
+}
+.bg-ma-grey300 {
+  background-color: #e0e0e0;
 }
 @media (max-width: 768px) {
   section.response-lay-bigB-right .text-right.res-btn {
