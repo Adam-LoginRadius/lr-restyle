@@ -150,19 +150,27 @@ a.a-text-block-link
 		display flex
 		flex-wrap inherit
 	h3
-		@extend .h4
+		@extend .h5
+		line-height 1.5
 		padding-bottom 1rem
 	p
 		display none
 	.customer_video_loading
 		display inline-block
 	.video_thumb
-		background-size 120%
+		background-size 100%
 		background-repeat no-repeat
 		background-position center
 		border: solid 1px $ma_col_grey300
-		height 150px
+		height 200px
 		position relative
+		margin-bottom .5rem
+		@media(min-width: 1200px)
+			height 164px
+		@media(min-width: 992px)
+			height 130px
+		@media (min-width: 576px)
+			height 162px
 		&:after
 			content: " "
 			position: absolute
@@ -180,7 +188,7 @@ a.a-text-block-link
 		&:focus
 			text-decoration none
 			.video_thumb
-				background-size 130%
+				background-size 105%
 				transition all ease-in-out 0.3s
 				&:after
 					background-color: rgba(0, 0, 0, 0.12);

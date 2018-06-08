@@ -142,6 +142,11 @@ li#field_2_11
 [class*='card-big-']
 	min-height 70vh
 	max-height 500px
+	@media (max-width: 767px)
+		min-height  auto
+	// @media (max-width: 575px)
+	// @media (max-width: 991px)
+	// @media (max-width: 1199px)
 	
 .card-big-
 	&logins
@@ -230,7 +235,7 @@ li#field_2_11
 	position: absolute;
 	color: white;
 	top: 0px; // refer to this issues https://vimeo.com/forums/help/topic:291053
-	right: 0;
+	right: 3rem;
 	transform: translate(100%, -100%);
 	cursor: pointer;
 	background: rgba(255, 255, 255, .25);

@@ -461,29 +461,29 @@ h3:last-of-type,
   margin: 0;
 }
 h4,
-.h4,
-.a-link-list.video h3 {
+.h4 {
   font-size: 1em;
   line-height: 1.71em;
 }
 @media screen and (min-width: 768px) {
   h4,
-  .h4,
-  .a-link-list.video h3 {
+  .h4 {
     font-size: 1.313em;
     line-height: 30px;
   }
 }
 h5,
 .h5,
-[class*='a-link-list-block'] a {
+[class*='a-link-list-block'] a,
+.a-link-list.video h3 {
   font-size: 1rem;
   line-height: 150%;
 }
 @media screen and (min-width: 768px) {
   h5,
   .h5,
-  [class*='a-link-list-block'] a {
+  [class*='a-link-list-block'] a,
+  .a-link-list.video h3 {
     font-size: 17px;
   }
 }
@@ -716,6 +716,11 @@ ul.gfield_checkbox {
   max-height: 500px;
 }
 @media (max-width: 767px) {
+  [class*='card-big-'] {
+    min-height: auto;
+  }
+}
+@media (max-width: 767px) {
   .card-big-logins {
     min-height: 0px;
   }
@@ -816,7 +821,7 @@ ul.gfield_checkbox {
   position: absolute;
   color: #fff;
   top: 0px;
-  right: 0;
+  right: 3rem;
   -webkit-transform: translate(100%, -100%);
   -ms-transform: translate(100%, -100%);
   transform: translate(100%, -100%);
@@ -1397,6 +1402,7 @@ a.a-text-block-link:active .cls-1 {
   flex-wrap: inherit;
 }
 .a-link-list.video h3 {
+  line-height: 1.5;
   padding-bottom: 1rem;
 }
 .a-link-list.video p {
@@ -1406,12 +1412,28 @@ a.a-text-block-link:active .cls-1 {
   display: inline-block;
 }
 .a-link-list.video .video_thumb {
-  background-size: 120%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   border: solid 1px #e0e0e0;
-  height: 150px;
+  height: 200px;
   position: relative;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 1200px) {
+  .a-link-list.video .video_thumb {
+    height: 164px;
+  }
+}
+@media (min-width: 992px) {
+  .a-link-list.video .video_thumb {
+    height: 130px;
+  }
+}
+@media (min-width: 576px) {
+  .a-link-list.video .video_thumb {
+    height: 162px;
+  }
 }
 .a-link-list.video .video_thumb:after {
   content: " ";
@@ -1434,7 +1456,7 @@ a.a-text-block-link:active .cls-1 {
 }
 .a-link-list.video a:hover .video_thumb,
 .a-link-list.video a:focus .video_thumb {
-  background-size: 130%;
+  background-size: 105%;
   -webkit-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
